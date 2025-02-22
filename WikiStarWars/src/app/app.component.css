@@ -1,15 +1,24 @@
-nav {
-    margin: 15px;
+header nav {
+    margin: 0;
     padding: 10px;
     background-color: gray;
+    width: auto;
 }
 
-nav a {
+header nav a {
     color:black;
     text-decoration: none;
     padding:10px;
 }
 
-nav a:hover{
+header nav a:hover{
     color:yellow;
+    transition: color 0.5s;
+}
+
+footer p {
+    background-color: gray;
+    width: auto;
+    text-align: center;
+    padding: 10px;
 }

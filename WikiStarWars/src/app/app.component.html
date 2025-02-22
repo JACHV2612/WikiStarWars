@@ -1,8 +1,14 @@
-<router-outlet>
-  <nav>
-    <a href="">Home</a>
-    <a href="/people">People</a>
-    <a href="/starships">Starships</a>
-    <a href="/movies">Movies</a>
-  </nav>
-</router-outlet>
+  <header>
+    <nav>
+      <a href="">Home</a>
+      <a href="/people">People</a>
+      <a href="/starships">Starships</a>
+      <a href="/movies">Movies</a>
+    </nav>
+  </header>
+  <router-outlet>
+    <!-- Todos los elementos que renderiza de otros componentes pasan por aqui -->
+  </router-outlet>
+  <footer>
+    <p>Wiki</p>
+  </footer>
