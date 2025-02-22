@@ -1,0 +1,32 @@
+.logo{
+    align-items: center;
+    text-align: center;
+}
+
+.logo img{
+    width: 300px;
+    height: 300px;
+}
+
+#listado{
+    align-items: center;
+    text-align: center;
+}
+
+#listado li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+#paginador{
+    align-items: center;
+    text-align: center;
+}
+
+#paginador buttom {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
