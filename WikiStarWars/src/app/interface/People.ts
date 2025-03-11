@@ -1,5 +1,8 @@
-export interface results{
-    result: IPeople[];
+export interface IAllPeople{
+    next: string;
+    count: number;
+
+    results: IPeople[];
 }
 
 export interface IPeople{

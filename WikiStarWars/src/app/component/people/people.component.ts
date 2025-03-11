@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PeopleService } from '../../service/people.service';
 import { Observable } from 'rxjs';
-import { IPeople, results } from '../../interface/People';
+import { IAllPeople } from '../../interface/People';
 
 @Component({
   selector: 'app-people',
@@ -14,7 +14,7 @@ export class PeopleComponent implements OnInit{
   constructor(public peopleService: PeopleService){}
 
 
-  characters: any[] = [];
+  characters = <IAllPeople>{};
 
   ngOnInit(): void {
     this.getAllPeople();

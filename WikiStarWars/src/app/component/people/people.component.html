@@ -10,8 +10,11 @@
 </div> -->
 <div>
     <ul>
-        @for (object of characters; track $index) {
-            <li> {{object.name}} </li>
+        <li>{{characters.next}}</li>
+        <li> {{ characters.count}} </li>
+        @for (item of characters.results; track $index) {
+            <p>{{item.name}}</p>
+            <p> {{item.homeworld}} </p>             
         }
     </ul>            
 </div>
