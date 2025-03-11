@@ -1,15 +1,22 @@
-<div class="logo">
+<!-- <div class="logo">
     <img src="img/logo.png" alt="logo">
-</div>
-<div id="listado">
+</div> -->
+<!-- <div id="listado">
     <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ul>    
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>        
+    </ul>
+</div> -->
+<div>
+    <ul>
+        @for (object of characters; track $index) {
+            <li> {{object.name}} </li>
+        }
+    </ul>            
 </div>
-<div id="paginador">
+<!-- <div id="paginador">
     <button name="privious"><</button>
     <button name="number">1</button>
     <button name="next">></button>
-</div>
+</div> -->
