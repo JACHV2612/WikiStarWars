@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PeopleService } from '../../service/people.service';
+import { PeopleService } from '../../service/people/people.service';
 import { Observable } from 'rxjs';
 import { IAllPeople } from '../../interface/People';
 
@@ -11,9 +11,8 @@ import { IAllPeople } from '../../interface/People';
   styleUrl: './people.component.css'
 })
 export class PeopleComponent implements OnInit{
+
   constructor(public peopleService: PeopleService){}
-
-
   characters = <IAllPeople>{};
 
   ngOnInit(): void {
@@ -23,7 +22,6 @@ export class PeopleComponent implements OnInit{
   getAllPeople(){
     this.peopleService.getAllPeople().subscribe({
       next: (data) => {
-        //this.peopleService.people = data;
         this.characters = data;        
         console.log(this.characters);
       },

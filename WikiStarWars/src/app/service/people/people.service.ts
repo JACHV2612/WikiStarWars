@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IAllPeople } from '../interface/People';
+import { IAllPeople } from '../../interface/People';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,6 @@ export class PeopleService {
   constructor(private http: HttpClient) {}
 
   public getAllPeople(){
-    //return this.http.get<any[]>(this.uriAllSWPeople);
     return this.http.get<IAllPeople>(this.uriAllSWPeople);
   }
 

@@ -1,0 +1,13 @@
+<section id="container">
+    @for(film of films.results; track $index)
+    {
+        <div class="card">
+            <div class="card-image"><img src="img/logo.png" alt="logo"></div>
+            <a href="#"><p class="name-film">{{ film.title }} </p></a>
+            <div class="card-info">
+                <p>Episode: {{ film.episode_id }} </p>
+                <p>Director: {{ film.director }} </p>
+            </div>
+        </div>
+    }
+</section>

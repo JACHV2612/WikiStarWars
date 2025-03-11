@@ -1,25 +1,33 @@
 <!-- <div class="logo">
     <img src="img/logo.png" alt="logo">
+</div> 
+<div id="main-container">
+@for (character of characters.results; track $index) 
+{
+    <div id="card-character">
+        <img src="img/logo.png" alt="character-img">
+        <ul>
+            <a href="#"><li> {{ character.name }} </li></a>
+            <li> Height: {{ character.height }} </li>
+            <li> Mass: {{ character.mass }} </li>
+            <li> Birth Year: {{ character.birth_year }} </li>
+            <li> Gender: {{ character.gender }} </li>
+        </ul>
+    </div>
+}
 </div> -->
-<!-- <div id="listado">
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>        
-    </ul>
-</div> -->
-<div>
-    <ul>
-        <li>{{characters.next}}</li>
-        <li> {{ characters.count}} </li>
-        @for (item of characters.results; track $index) {
-            <p>{{item.name}}</p>
-            <p> {{item.homeworld}} </p>             
-        }
-    </ul>            
-</div>
-<!-- <div id="paginador">
-    <button name="privious"><</button>
-    <button name="number">1</button>
-    <button name="next">></button>
-</div> -->
+
+<section id="container">
+    @for(character of characters.results; track $index)
+    {
+        <div class="card">
+            <div class="card-image"><img src="img/logo.png" alt="logo"></div>
+            <a href="#"><p class="name-character">{{ character.name }} </p></a>
+            <div class="card-info">
+                <p>Height: {{character.height}} </p>
+                <p>Mass: {{character.mass}} </p>
+                <p>Birth Year: {{character.birth_year}} </p>
+            </div>
+        </div>
+    }
+</section>

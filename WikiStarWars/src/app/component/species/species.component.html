@@ -1,0 +1,13 @@
+<section id="container">
+    @for(specie of species.results; track $index)
+    {
+        <div class="card">
+            <div class="card-image"><img src="img/logo.png" alt="logo"></div>
+            <a href="#"><p class="name-specie">{{ specie.name }} </p></a>
+            <div class="card-info">
+                <p>Classification: {{ specie.classification }} </p>
+                <p>Designation: {{ specie.designation }} </p>
+            </div>
+        </div>
+    }
+</section>

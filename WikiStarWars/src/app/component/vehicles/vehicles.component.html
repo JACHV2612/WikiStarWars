@@ -1,0 +1,13 @@
+<section id="container">
+    @for(vehicle of vehicles.results; track $index)
+    {
+        <div class="card">
+            <div class="card-image"><img src="img/logo.png" alt="logo"></div>
+            <a href="#"><p class="name-vehicle">{{ vehicle.name }} </p></a>
+            <div class="card-info">
+                <p>Model: {{ vehicle.model }} </p>
+                <p>Crew: {{ vehicle.crew }} </p>
+            </div>
+        </div>
+    }
+</section>

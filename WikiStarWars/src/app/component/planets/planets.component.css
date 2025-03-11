@@ -1,51 +1,3 @@
-/* .logo{
-    align-items: center;
-    text-align: center;
-}
-
-.logo img{
-    width: 375px;
-    height: 300px;
-}
-
-#main-container{
-    width: auto;
-    height: auto;
-    border: 1px solid black;
-    font-family: 'Courier New', Courier, monospace;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-}
-
-#card-character{
-    width: 425px;
-    height: 125px;
-    border: 1px solid black;
-    padding: 5px;
-    display: flex;
-    margin:10px;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #ECEBE3;
-}
-
-#card-character img{
-    width: 125px;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border:1px solid black;
-}
-
-a{
-    text-decoration: none;
-}
-
-ul li{
-    list-style-type:none;
-} */
-
 #container{
     /* display: grid;
     grid-template-columns: auto auto auto auto auto; */
@@ -92,7 +44,7 @@ ul li{
     margin-left: 15px;
 }
 
-.name-character{
+.name-planet{
     text-align: center;
 }
 
